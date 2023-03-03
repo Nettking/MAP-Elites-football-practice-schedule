@@ -1,7 +1,7 @@
 import csv
 
 # Define the file path and name of the CSV file
-csv_file = "drills_space.csv"
+csv_file = "./data/drills_space.csv"
 
 # Create empty dictionaries to store the feature space for each activity type
 running_drills_space = {}
