@@ -1,3 +1,5 @@
+import random
+
 # Define a crossover function that exchanges genes between two solutions
 def crossover(parent1, parent2):
     child = []
