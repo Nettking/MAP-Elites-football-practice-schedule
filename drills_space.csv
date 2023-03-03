@@ -1,0 +1,111 @@
+Activity Type,Type,Duration,Score,Injuries,SkillImprovement
+Running Drills,Sprints,5,26,2,10
+Running Drills,Sprints,10,4,2,6
+Running Drills,Sprints,15,8,10,0
+Running Drills,Long-distance run,10,4,2,6
+Running Drills,Long-distance run,15,8,0,2
+Running Drills,Long-distance run,20,21,9,9
+Running Drills,Hill Repeats,5,1,0,9
+Running Drills,Hill Repeats,10,26,10,2
+Running Drills,Hill Repeats,15,13,8,7
+Running Drills,Hill Repeats,20,22,9,8
+Passing Drills,Short Pass,5,26,0,3
+Passing Drills,Short Pass,10,11,7,0
+Passing Drills,Long Pass,5,12,6,3
+Passing Drills,Long Pass,10,22,8,8
+Passing Drills,Cross,5,5,8,9
+Passing Drills,Cross,10,0,6,9
+Passing Drills,Through,5,17,8,3
+Passing Drills,Through,10,25,7,8
+Passing Drills,Chip,5,12,0,9
+Passing Drills,Chip,10,16,9,7
+Passing Drills,Deep Ball,5,8,0,8
+Passing Drills,Deep Ball,10,14,8,9
+Passing Drills,Corner,5,12,6,9
+Passing Drills,Corner,10,8,8,5
+Passing Drills,Free Kick,5,9,9,1
+Passing Drills,Free Kick,10,26,8,7
+Defensive Drills,Tackling,5,1,6,9
+Defensive Drills,Tackling,10,27,1,8
+Defensive Drills,Tackling,15,7,5,8
+Defensive Drills,Intercepting,5,5,8,7
+Defensive Drills,Intercepting,10,23,7,9
+Defensive Drills,Intercepting,15,8,3,6
+Defensive Drills,Pass Rush,5,10,1,6
+Defensive Drills,Pass Rush,10,26,9,6
+Defensive Drills,Pass Rush,15,3,0,5
+Defensive Drills,Zone Coverage,5,7,2,3
+Defensive Drills,Zone Coverage,10,8,6,2
+Defensive Drills,Zone Coverage,15,12,6,9
+Defensive Drills,Blocking,5,10,0,4
+Defensive Drills,Blocking,10,1,8,5
+Defensive Drills,Blocking,15,27,4,9
+Defensive Drills,Footwork,5,23,3,7
+Defensive Drills,Footwork,10,18,5,10
+Defensive Drills,Footwork,15,18,9,9
+Defensive Drills,Fumble Recovery,5,20,10,5
+Defensive Drills,Fumble Recovery,10,11,1,6
+Defensive Drills,Fumble Recovery,15,6,2,2
+Defensive Drills,Defensive Formation,5,14,3,5
+Defensive Drills,Defensive Formation,10,0,2,6
+Defensive Drills,Defensive Formation,15,20,9,6
+Offensive Drills,Set Pieces,5,15,10,8
+Offensive Drills,Set Pieces,10,29,2,2
+Offensive Drills,Set Pieces,15,21,2,2
+Offensive Drills,Off-ball Movement,5,28,3,0
+Offensive Drills,Off-ball Movement,10,4,3,1
+Offensive Drills,Off-ball Movement,15,9,9,6
+Offensive Drills,Counter-attacks,5,14,2,2
+Offensive Drills,Counter-attacks,10,19,3,10
+Offensive Drills,Counter-attacks,15,7,3,5
+Offensive Drills,Crossing,5,14,1,1
+Offensive Drills,Crossing,10,27,5,1
+Offensive Drills,Crossing,15,24,8,10
+Offensive Drills,1v1,5,15,1,5
+Offensive Drills,1v1,10,25,10,10
+Offensive Drills,1v1,15,12,1,4
+Offensive Drills,Shooting,5,29,0,7
+Offensive Drills,Shooting,10,24,9,0
+Offensive Drills,Shooting,15,0,6,0
+Offensive Drills,Attacking from Flanks,5,2,5,6
+Offensive Drills,Attacking from Flanks,10,14,3,3
+Offensive Drills,Attacking from Flanks,15,11,5,10
+Agility Drills,Ladder Drill,5,22,5,0
+Agility Drills,Ladder Drill,10,9,3,10
+Warm-up Exercises,Light jog,10,30,8,0
+Warm-up Exercises,Jumping jacks,5,4,6,9
+Warm-up Exercises,Butt kicks,5,25,10,4
+Warm-up Exercises,High knees,5,17,0,6
+Warm-up Exercises,Lunges,5,10,6,9
+Warm-up Exercises,Leg swings,5,21,2,3
+Warm-up Exercises,Arm circles,5,8,1,9
+Warm-up Exercises,Push ups,5,4,0,3
+Warm-up Exercises,Squats,5,19,1,4
+Warm-up Exercises,Burpees,5,28,5,6
+Strength Training,Barbell squats,10,5,9,6
+Strength Training,Deadlifts,10,16,3,3
+Strength Training,Bench press,10,13,8,2
+Strength Training,Dumbbell rows,10,2,8,3
+Strength Training,Military press,10,29,10,6
+Strength Training,Chin-ups,10,0,4,1
+Strength Training,Bicep curls,10,26,7,1
+Strength Training,Tricep extensions,10,14,8,5
+Strength Training,Lateral raises,10,19,8,1
+Strength Training,Plank,10,25,4,8
+Stretching,Hamstring stretch,5,6,1,7
+Stretching,Quad stretch,5,28,5,10
+Stretching,Calves stretch,5,28,3,0
+Stretching,Shoulder stretch,5,4,8,8
+Stretching,Chest stretch,5,20,1,5
+Stretching,Tricep stretch,5,4,9,0
+Stretching,Hip flexor stretch,5,11,6,9
+Stretching,Back stretch,5,2,2,1
+Stretching,Neck stretch,5,29,6,1
+Stretching,Butterfly stretch,5,28,10,2
+Cardiovascular Training,Running,15,2,5,1
+Cardiovascular Training,Cycling,15,7,9,3
+Cardiovascular Training,Rowing,15,28,2,2
+Cardiovascular Training,Stair climbing,15,18,5,3
+Cardiovascular Training,Elliptical,15,7,0,8
+Cardiovascular Training,Jump rope,15,19,6,6
+Cardiovascular Training,Jumping jacks,5,0,3,7
