@@ -35,9 +35,11 @@ def calculate_fitness(solution, num_dimensions, bin_sizes, feature_space):
 
     # Calculate the skill level improvement based on pre- and post-practice assessments
     skill_level_improvement = calculate_skill_level_improvement(selected_activities)
+    
     w1 = 3
     w2 = 2
     w3 = 1
+    
     # Calculate the final fitness score as a weighted sum of the different metrics
     fitness = w1 * (1 - injury_rate) + w2 * player_satisfaction + w3 * skill_level_improvement
 

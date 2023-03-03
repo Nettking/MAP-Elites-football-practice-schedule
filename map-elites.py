@@ -1,12 +1,17 @@
 import math
-import random
-import numpy as np
 
 from MAP_Elites import *
 
 # Define the size of the map and the number of generations to run
 map_size = (10, 10)
 num_generations = 50
+
+mutation_prob = 0.01
+crossover_prob = 0.1
+
+mutation_decay = 0.9
+crossover_decay = 0.9
+
 
 # Define the number of dimensions and the feature space for the solution space
 num_dimensions = 9
@@ -31,32 +36,22 @@ for space in feature_space:
 
 
 
-# Define a function to generate a random solution
-def generate_solution():
-    solution = []
-    for i in range(num_dimensions):
-        solution.append(random.randint(0, map_size[0] - 1))
-    return solution
+
+
+
 
 # Define the initial elite archive
 elite_archive = {}
 
-# Define the function to update the elite archive
-def update_elite_archive(solution, fitness):
-    # Calculate the bin indices for the solution
-    bin_indices = tuple([math.floor(solution[i] * map_size[1] / (max_duration + 1)) for i, max_duration in enumerate(bin_sizes)])
 
-    # If the bin is empty or the new solution dominates the current solution in the bin, update the bin
-    if bin_indices not in elite_archive or fitness > elite_archive[bin_indices]["fitness"]:
-        elite_archive[bin_indices] = {"solution": solution, "fitness": fitness}
-
-# Run the map elites algorithm
+# Run the map elites algorithm with mutation and crossover
 for generation in range(num_generations):
     # Generate a new set of solutions
-    solutions = [generate_solution() for i in range(map_size[0] * map_size[1])]
+    parents = [elite_archive[key]["solution"] for key in elite_archive.keys()]
+    solutions = [generate_solution(parents, mutation_prob, crossover_prob, num_dimensions) for i in range(map_size[0] * map_size[1])]
 
     # Evaluate the fitness of each solution
-    fitnesses = [calculate_fitness(solution, num_dimensions, bin_sizes, feature_space) for solution in solutions]
+    fitnesses = [calculate_fitness(solution) for solution in solutions]
 
     # Update the elite archive with the best solutions
     for solution, fitness in zip(solutions, fitnesses):
@@ -64,8 +59,14 @@ for generation in range(num_generations):
 
     # Print the best solution and its fitness for this generation
     best_solution = max(elite_archive.values(), key=lambda x: x["fitness"])["solution"]
-    best_fitness = calculate_fitness(best_solution, num_dimensions, bin_sizes, feature_space)
+    best_fitness = calculate_fitness(best_solution)
     print(f"Generation {generation+1}: Best fitness = {best_fitness:.2f}")
+
+    # Decrease the mutation and crossover probabilities over time
+    mutation_prob *= mutation_decay
+    crossover_prob *= crossover_decay
+
+
 
 # Print the final elite archive
 print("Final Elite Archive:")
