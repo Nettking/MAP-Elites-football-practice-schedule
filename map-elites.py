@@ -2,9 +2,7 @@ import math
 import random
 import numpy as np
 
-from import_drills import *
-from calculate_player_satisfaction import *
-from calculate_fitness import *
+from MAP_Elites import *
 
 # Define the size of the map and the number of generations to run
 map_size = (10, 10)

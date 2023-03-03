@@ -1,5 +1,7 @@
-from calculate_player_satisfaction import *
-from calculate_skill_level_improvement import *
+import math
+
+from MAP_Elites.calculate_player_satisfaction import *
+from MAP_Elites.calculate_skill_level_improvement import *
 
 def calculate_fitness(solution, num_dimensions, bin_sizes, feature_space):
     # Convert the solution to a list of durations for each activity type
