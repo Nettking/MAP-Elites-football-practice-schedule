@@ -48,7 +48,7 @@ def main():
     # Define the bin size for each dimension
     bin_sizes = []
     for space in feature_space:
-        max_duration = max(space.values())
+        max_duration = max(list(space.values()), key=lambda x: x["Duration"])
         bin_size = math.ceil(max_duration / map_size[0])
         bin_sizes.append(bin_size)
 
@@ -56,14 +56,14 @@ def main():
     for generation in range(num_generations):
         # Generate a new set of solutions
         parents = [elite_archive[key]["solution"] for key in elite_archive.keys()]
-        solutions = [generate_solution(parents, mutation_prob, crossover_prob, num_dimensions) for i in range(map_size[0] * map_size[1])]
+        solutions = [generate_solution(parents, mutation_prob, crossover_prob, num_dimensions, map_size) for i in range(map_size[0] * map_size[1])]
 
         # Evaluate the fitness of each solution
-        fitnesses = [calculate_fitness(solution) for solution in solutions]
+        fitnesses = [calculate_fitness(solution, num_dimensions, bin_sizes, feature_space) for solution in solutions]
 
         # Update the elite archive with the best solutions
         for solution, fitness in zip(solutions, fitnesses):
-            update_elite_archive(solution, fitness)
+            update_elite_archive(solution, fitness, elite_archive, map_size, bin_sizes)
 
         # Print the best solution and its fitness for this generation
         best_solution = max(elite_archive.values(), key=lambda x: x["fitness"])["solution"]

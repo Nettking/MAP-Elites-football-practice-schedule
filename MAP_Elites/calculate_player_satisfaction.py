@@ -1,7 +1,7 @@
 def calculate_player_satisfaction(selected_activities):
     
     # Create a dictionary to map activity names to their scores
-    activity_scores = {activity["Activity Type"]: activity["Score"] for activity in activities_data}
+    activity_scores = {activity["Activity Type"]: activity["Score"] for activity in selected_activities}
 
 
     # Calculate the total score for all the activities in the list

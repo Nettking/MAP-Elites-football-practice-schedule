@@ -1,7 +1,7 @@
 import math
 
 # Define the function to update the elite archive
-def update_elite_archive(solution, fitness, elite_archive, map_size):
+def update_elite_archive(solution, fitness, elite_archive, map_size, bin_sizes):
     # Calculate the bin indices for the solution
     bin_indices = tuple([math.floor(solution[i] * map_size[1] / (max_duration + 1)) for i, max_duration in enumerate(bin_sizes)])
 
