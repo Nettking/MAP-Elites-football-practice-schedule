@@ -5,3 +5,4 @@ from MAP_Elites.update_elite_archive import *
 from MAP_Elites.crossover import *
 from MAP_Elites.mutate import *
 from MAP_Elites.generate_solution import *
+from MAP_Elites.Activity import *
