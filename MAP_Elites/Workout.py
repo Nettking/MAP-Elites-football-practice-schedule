@@ -1,13 +1,13 @@
 class Workout:
 
-    def __init__(self, warmup_excercises, main_exercises, stretching_exercises):
-        self.warmup_exercises = warmup_excercises
+    def __init__(self, warmup_exercises, main_exercises, stretching_exercises):
+        self.warmup_exercises = warmup_exercises
         self.main_exercises = main_exercises
         self.stretching_exercises = stretching_exercises
 
     @property        
     def warmup_duration(self):
-        return self.calculate_duration(self.warmup_excercises)
+        return self.calculate_duration(self.warmup_exercises)
         
     @property        
     def main_duration(self):
@@ -27,7 +27,7 @@ class Workout:
 
     def print_details(self):
         print(f" Warmup ({self.warmup_duration} minutter): ")
-        for exercise in self.warmup_excercises:
+        for exercise in self.warmup_exercises:
             exercise.print_details()
         print(f" Main ({self.main_duration} minutter):")
         for exercise in self.main_exercises:
