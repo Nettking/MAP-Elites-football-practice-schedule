@@ -1,34 +1,38 @@
 Day,Type,Name,Duration,Score,Injury,Skill Improvement
 Monday,Warm-up,Jumping lunges,5,20.0,2.0,6.0
-Monday,Warm-up,High knees,5,17.0,0.0,6.0
-Monday,Warm-up,Push ups,5,4.0,0.0,3.0
-Monday,Main,Ladder Drill,10,9.0,3.0,10.0
-Monday,Main,Flicks and chips,10,16.0,3.0,7.0
-Monday,Main,Fake shots and passes,10,21.0,4.0,9.0
-Monday,Main,Hill Repeats,5,1.0,0.0,9.0
-Monday,Main,Fartlek runs,20,27.0,6.0,10.0
-Monday,Main,Shooting,5,29.0,0.0,7.0
-Monday,Stretching,Hamstring stretch,5,6.0,1.0,7.0
-Monday,Stretching,Standing hamstring stretch,5,6.0,2.0,6.0
-Monday,Stretching, Full Body,10,20.0,3.0,9.0
+Monday,Warm-up,Jumping lunges,5,20.0,2.0,6.0
+Monday,Warm-up,Jumping lunges,5,20.0,2.0,6.0
+Monday,Main,Off-ball Movement,5,28.0,3.0,0.0
+Monday,Main,Chip,5,12.0,0.0,9.0
+Monday,Main,Ladder Drill,5,22.0,5.0,0.0
+Monday,Main,Set Pieces,10,29.0,2.0,2.0
+Monday,Main,Goal-setting,5,25.0,0.0,9.0
+Monday,Main,Defensive Formation,5,14.0,3.0,5.0
+Monday,Main,Zone Coverage,15,12.0,6.0,9.0
+Monday,Main,Set Pieces,10,29.0,2.0,2.0
+Monday,Stretching,Piriformis stretch,5,14.0,2.0,6.0
+Monday,Stretching,Butterfly stretch with forward fold,10,19.0,5.0,9.0
+Wednesday,Warm-up,Skipping,10,21.0,5.0,9.0
 Wednesday,Warm-up,Push ups,5,4.0,0.0,3.0
-Wednesday,Warm-up,High kicks,10,23.0,4.0,9.0
-Wednesday,Main,Plank with weight shift,10,15.0,1.0,4.0
-Wednesday,Main,Positive self-talk,5,21.0,0.0,7.0
-Wednesday,Main,Time management,5,23.0,0.0,8.0
-Wednesday,Main,Deadlifts,10,16.0,3.0,3.0
-Wednesday,Main,Sprints,5,26.0,2.0,10.0
-Wednesday,Main,Lateral raises,10,19.0,8.0,1.0
-Wednesday,Main,Cone drills,5,9.0,1.0,4.0
-Wednesday,Main,Fake shots and passes,10,21.0,4.0,9.0
-Wednesday,Stretching,Hamstring stretch,5,6.0,1.0,7.0
-Wednesday,Stretching,Thread-the-needle stretch,10,17.0,4.0,8.0
-Saturday,Warm-up,Squats,5,19.0,1.0,4.0
-Saturday,Warm-up,Inchworms,10,17.0,3.0,7.0
-Saturday,Main,3v2 attacking,10,20.0,4.0,8.0
-Saturday,Main,Shadowing,10,22.0,6.0,9.0
-Saturday,Main,Tempo runs,20,23.0,4.0,8.0
-Saturday,Main,Interval runs,20,25.0,5.0,9.0
-Saturday,Stretching,Thread-the-needle stretch,5,10.0,2.0,5.0
-Saturday,Stretching, Full Body,5,8.0,1.0,8.0
-Saturday,Stretching,Chest stretch,5,20.0,1.0,5.0
+Wednesday,Main,One-touch passing,5,17.0,3.0,7.0
+Wednesday,Main,Blocking,5,10.0,0.0,4.0
+Wednesday,Main,Footwork,10,18.0,5.0,10.0
+Wednesday,Main,Elliptical,15,7.0,0.0,8.0
+Wednesday,Main,Ladder Drill,10,9.0,3.0,10.0
+Wednesday,Main,Covering,10,23.0,4.0,8.0
+Wednesday,Main,Blocking,5,10.0,0.0,4.0
+Wednesday,Stretching,Thread-the-needle stretch,5,10.0,2.0,5.0
+Wednesday,Stretching,Hip flexor and quad stretch,5,8.0,1.0,4.0
+Wednesday,Stretching,Thread-the-needle stretch,5,10.0,2.0,5.0
+Saturday,Warm-up,Skipping,5,16.0,3.0,7.0
+Saturday,Warm-up,Skipping,5,16.0,3.0,7.0
+Saturday,Warm-up,Skipping,5,16.0,3.0,7.0
+Saturday,Main,Short Pass,5,26.0,0.0,3.0
+Saturday,Main,Journaling,10,26.0,0.0,9.0
+Saturday,Main,Meditation,10,27.0,0.0,9.0
+Saturday,Main,Figure-8 runs,10,21.0,4.0,8.0
+Saturday,Main,Short Pass,5,26.0,0.0,3.0
+Saturday,Main,Journaling,10,26.0,0.0,9.0
+Saturday,Main,Journaling,10,26.0,0.0,9.0
+Saturday,Stretching,Butterfly stretch with forward fold,10,19.0,5.0,9.0
+Saturday,Stretching,Hamstring stretch,5,6.0,1.0,7.0

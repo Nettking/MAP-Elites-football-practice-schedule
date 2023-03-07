@@ -14,18 +14,22 @@ def get_best_plans(plans, number_of_plans_to_get):
 
 warmup, main, stretching = read_exercises()
 next_generation = []
-next_generation.append(read_activity_plan_from_csv())
+
 generator = ActivityPlanGenerator(warmup, main, stretching) 
 if __name__ == '__main__':
     count = 0
     while count < 100:
         count += 1    
+        
+        # Generate 100 random activity plans
+        plans = generate_activity_plans(generator, 100)
+        
         if count > 1:
             for plan in next_generation:
                 plans.append(plan)
-        # Generate 100 random activity plans
-        plans = generate_activity_plans(generator, 100)
-
+        else:
+            plans.append(read_activity_plan_from_csv())
+        
         # Get the 100 best plans
         best = get_best_plans(plans, 2)
 

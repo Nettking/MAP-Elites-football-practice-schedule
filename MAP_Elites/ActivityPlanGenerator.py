@@ -67,7 +67,10 @@ class ActivityPlanGenerator:
         for activity in result:
             for dominent_activity in dominent_activities:
                 if (activity.activity_type == dominent_activity.activity_type and activity.activity_name == dominent_activity.activity_name):
-                    result.remove(activity)
+                    try:
+                        result.remove(activity)
+                    except:
+                        pass
         return result
 
     @staticmethod
