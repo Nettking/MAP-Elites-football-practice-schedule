@@ -67,20 +67,24 @@ class ActivityPlanGenerator:
         for activity in result:
             for dominent_activity in dominent_activities:
                 if (activity.activity_type == dominent_activity.activity_type and activity.activity_name == dominent_activity.activity_name):
-                    result.remove(activity)
+                    try:
+                        result.remove(activity)
+                    except:
+                        #print('Delete error')
+                        pass
         return result
 
     @staticmethod
     def crossover_activity_list(dominent_activities, recessive_activities):
         result = dominent_activities.copy()
         activity_index_to_remove = random.randrange(len(result))
-        print("FJERNER " + result[activity_index_to_remove].activity_type + " - " + result[activity_index_to_remove].activity_name) 
+        #print("FJERNER " + result[activity_index_to_remove].activity_type + " - " + result[activity_index_to_remove].activity_name) 
         removed_element = result.pop(activity_index_to_remove)
         candidate_activities = ActivityPlanGenerator.activities_not_in_list(dominent_activities, recessive_activities)
         if (len(candidate_activities) == 0):
             return dominent_activities.copy()
         activity_index_to_add = random.randrange(len(candidate_activities))
-        print("LEGGER TIL " + candidate_activities[activity_index_to_add].activity_type + " - " + candidate_activities[activity_index_to_add].activity_name) 
+        #print("LEGGER TIL " + candidate_activities[activity_index_to_add].activity_type + " - " + candidate_activities[activity_index_to_add].activity_name) 
         result.append(recessive_activities[activity_index_to_add])
         return result
 
@@ -92,6 +96,28 @@ class ActivityPlanGenerator:
         setattr(result, f'{random_part}_exercises', ActivityPlanGenerator.crossover_activity_list(getattr(dominent_day, f'{random_part}_exercises'), getattr(recessive_day, f'{random_part}_exercises')))
         return result
 
+    def mutate(self, activity_plan, mutation_rate):
+        # Choose a random day
+        day = random.choice(['monday_workout', 'wednesday_workout', 'saturday_workout'])
+
+        # Choose a random exercise category to mutate
+        category = random.choice(['warmup', 'main', 'stretching'])
+
+        # Retrieve the workout object and the list of exercises for the chosen category
+        workout = getattr(activity_plan, day)
+        exercises = getattr(workout, f"{category}_exercises")
+
+        # Choose a random exercise from the list and replace it with a new exercise
+        if random.random() < mutation_rate and len(exercises) > 0:
+            new_exercise = self.get_exercise_not_already_added(exercises, getattr(self, f"all_{category}_excercises"))
+            random_index = random.randint(0, len(exercises) - 1)
+            exercises[random_index] = new_exercise
+            setattr(workout, f"{category}_exercises", exercises)
+            setattr(activity_plan, day, workout)
+            #print(f"Mutated one {category} exercise for {day}")
+
+        return activity_plan
+
     @staticmethod
     def crossover(activity_plan1, activity_plan2):
 
@@ -101,6 +127,7 @@ class ActivityPlanGenerator:
         else:
             dominent = activity_plan2
             rescesive = activity_plan1
+
 
         result = copy.deepcopy(dominent)
 
@@ -116,8 +143,9 @@ class ActivityPlanGenerator:
         workout = ActivityPlanGenerator.crossover_day(getattr(dominent, attr_name), getattr(rescesive, attr_name))
         setattr(result, attr_name, workout)
 
-        print("Changed workout plan for", day)
+        #print("Changed workout plan for", day)
  
-
+        if dominent.total_score > result.total_score:
+            result = dominent
+            
         return result
-    

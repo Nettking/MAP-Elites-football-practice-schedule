@@ -2,3 +2,4 @@ numpy
 random
 math
 csv
+tqdm
