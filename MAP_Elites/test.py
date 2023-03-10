@@ -22,7 +22,7 @@ if __name__ == '__main__':
         count += 1    
         
         # Generate 100 random activity plans
-        plans = generate_activity_plans(generator, 100)
+        plans = generate_activity_plans(generator, 2)
         
         if count > 1:
             for plan in next_generation:
@@ -48,3 +48,4 @@ if __name__ == '__main__':
         print('Current best:' + str(best_next_generation[0].total_score))
     best_next_generation[0].print_details()
     save_activity_plan_to_csv(best_next_generation[0])
+    
